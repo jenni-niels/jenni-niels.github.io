@@ -2,7 +2,7 @@
 ---
 
 <div class="row">
-  <div class="col-sm-2 abbr">
+  <!-- <div class="col-sm-2 abbr">
   {% if entry.abbr %}
     {% if site.data.venues[entry.abbr] %}
     <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
@@ -10,6 +10,12 @@
     <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
   {% endif %}
+  </div> -->
+
+  <div style="clear: both;">
+    <div>
+        <img class="col bibone first" style="width:180px" alt="{{ site.data.teasers[entry.abbr].alt }}" src="{{ site.data.teasers[entry.abbr].img| prepend: 'assets/img/teasers/' | prepend: site.baseurl | prepend: site.url }}">
+    </div>
   </div>
 
   <div id="{{entry.key}}" class="col-sm-8">
