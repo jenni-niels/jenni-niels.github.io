@@ -6,10 +6,7 @@
   {% endif %}
     <div class="card hoverable">
       {% if project.img %}
-        {% responsive_image_block %}
-          path: {{ project.img }}
-          alt: "project thumbnail"
-        {% endresponsive_image_block %}
+        <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
       {% endif %}
       <div class="card-body">
         <h2 class="card-title text-lowercase">{{ project.title }}</h2>
