@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
-# description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+# description: <a href="/assets/pdf/JN_Matthews_Curriculum_Vitae.pdf">Curriculum Vitae</a>
 
 profile:
   align: right
   image: prof_pic.jpg
 
-news: false  # includes a list of news items
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
@@ -17,7 +17,9 @@ JN Matthews is a computational engineer at the [MGGG Redistricting Lab](https://
 research group at Tisch College of Tufts University led by Moon Duchin.  At the lab, I work on a
 variety of research projects and software development.
 
-I graduated from Tufts University in 2019, where I studied computer science and math.
+I graduated from Tufts University in 2019, where I studied computer science and math.  My research
+interests are at the intersection of theoretical computer science, social justice, law and public
+policy.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

@@ -1,7 +1,7 @@
 census_topdown:
-  img: filler.png
+  img: dp-tree.png
   alt: A teaser graphic for the Census TopDown paper.
 
 short_bursts:
-  img: filler.png
+  img: short-bursts.png
   alt: A teaser graphic for the Short Bursts paper.

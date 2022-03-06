@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: current and recent projects
 nav: true
-display_categories: [work, fun, teaching]
-horizontal: true
+# display_categories: [work, fun, teaching]
+horizontal: false
 ---
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
@@ -24,10 +24,12 @@ horizontal: true
           </div>
         </div>
       {% else %}
-        <div class="grid">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3">
           {% for project in sorted_projects %}
             {% include projects.html %}
           {% endfor %}
+          </div>
         </div>
       {% endif %}
     {% endfor %}
@@ -45,10 +47,12 @@ horizontal: true
         </div>
       </div>
     {% else %}
-      <div class="grid">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
         {% for project in sorted_projects %}
           {% include projects.html %}
         {% endfor %}
+        </div>
       </div>
     {% endif %}
 

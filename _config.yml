@@ -34,7 +34,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -78,7 +78,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
+blog_name:   # your blog must have a name for it to show up in the nav bar
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
@@ -144,7 +144,6 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
   - jekyll-paginate-v2
-  # - jekyll-responsive-image
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-target-blank
@@ -204,24 +203,6 @@ scholar:
   details_link: Details
 
   query: "@*"
-
-
-# -----------------------------------------------------------------------------
-# Jekyll Responsive Images
-# -----------------------------------------------------------------------------
-
-# responsive_image:
-#   template: _includes/responsive_img.html
-#   # Quality to use when resizing images.
-#   default_quality: 80
-#   sizes:
-#     - width: 480
-#     - width: 800
-#     - width: 1400
-#       quality: 90
-#   # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size.
-#   strip: true
-
 
 # -----------------------------------------------------------------------------
 # Jekyll Diagrams
