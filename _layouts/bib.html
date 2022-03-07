@@ -2,7 +2,7 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr">
+        <!-- <div class="col-sm-2 abbr">
         {%- if entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
           <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
@@ -10,6 +10,11 @@
           <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
         {%- endif -%}
+        </div> -->
+        <div style="clear: both;">
+          <div>
+              <img class="col bibone first" style="width:180px" alt="{{ site.data.teasers[entry.abbr].alt }}" src="{{ site.data.teasers[entry.abbr].img| prepend: 'assets/img/' | prepend: site.baseurl | prepend: site.url }}">
+          </div>
         </div>
 
         <!-- Entry bib key -->
@@ -21,53 +26,37 @@
           <div class="title">{{entry.title}}</div>
           <!-- Author -->
           <div class="author">
-          {%- for author in entry.author_array -%}
-            {%- assign author_is_self = false -%}
-            {%- if author.last == site.scholar.last_name%}
-              {%- if site.scholar.first_name contains author.first -%}
-                {%- assign author_is_self = true -%}
-              {%- endif -%}
-            {%- endif -%}
-            {%- assign coauthor_url = nil -%}
-            {%- if site.data.coauthors[author.last] -%}
-              {%- for coauthor in site.data.coauthors[author.last] -%}
-                {%- if coauthor.firstname contains author.first -%}
-                  {%- assign coauthor_url = coauthor.url -%}
-                  {%- break -%}
-                {%- endif -%}
-              {%- endfor -%}
-            {%- endif -%}
-            
-            {%- if forloop.length == 1 -%}
-              {%- if author_is_self %}
-                <em>{{author.last}}, {{author.first}}</em>
-              {%- else -%}
-                {{author.last}}, {{author.first}}
-              {%- endif -%}
-            {%- else -%}
-              {%- unless forloop.last -%}
-                {% if author_is_self %}
-                  <em>{{author.last}}, {{author.first}}</em>,&nbsp;
-                {%- else -%}
-                  {% if coauthor_url -%}
-                    <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>,&nbsp;
-                  {%- else -%}
-                    {{author.last}}, {{author.first}},&nbsp;
-                  {%- endif -%}
-                {%- endif -%}
-              {%- else -%}
-                {% if author_is_self -%}
-                  and <em>{{author.last}}, {{author.first}}</em>
-                {% else -%}
-                  {%- if coauthor_url -%}
-                    and <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
-                  {% else -%}
-                    and {{author.last}}, {{author.first}}
-                  {%- endif -%}
-                {%- endif -%}
-              {%- endunless -%}
-            {%- endif -%}
-          {%- endfor %}
+            {% for author in entry.author_array %}
+              {% if forloop.length == 1 %}
+                {% if author.last == "Matthews" %}
+                  <em>{{author.first}} {{author.last}}</em>
+                {% else %}
+                  {{author.first}} {{author.last}}
+                {% endif %}
+              {% else %}
+                {% unless forloop.last %}
+                  {% if author.last == "Matthews" %}
+                    <em>{{author.first}} {{author.last}}</em>,
+                  {% else %}
+                    {% if site.data.coauthors[author.last] %}
+                      <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
+                    {% else %}
+                      {{author.first}} {{author.last}},
+                    {% endif %}
+                  {% endif %}
+                {% else %}
+                  {% if author.last == "Matthews" %}
+                    and <em>{{author.first}} {{author.last}}</em>
+                  {% else %}
+                    {% if site.data.coauthors[author.last] %}
+                      and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>
+                    {% else %}
+                      and {{author.first}} {{author.last}}
+                    {% endif %}
+                  {% endif %}
+                {% endunless %}
+              {% endif %}
+            {% endfor %}
           </div>
 
           <!-- Journal/Book title and date -->
