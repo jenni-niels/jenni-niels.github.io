@@ -28,6 +28,7 @@ understanding of the course material.
 Interactive Presentations for the North Carolina Network of Math Teachers’ Circles
 * Census TopDown: The Impacts of Differential Privacy on Redistricting
 Foundations of Responsible Computing (FORC 2021)
+    * Recordings: [[20-minute talk]](https://www.youtube.com/watch?v=f5thi6e5UkM), [[5-minute talk]](https://www.youtube.com/watch?v=L70wTWHwVSE)
 
 
 <!-- 

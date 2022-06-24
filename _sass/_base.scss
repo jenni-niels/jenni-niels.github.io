@@ -108,7 +108,8 @@ blockquote {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
+  color: $grey-color-med;
   a {
     color: inherit;
     &:hover {

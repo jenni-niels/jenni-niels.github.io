@@ -5,3 +5,10 @@ census_topdown:
 short_bursts:
   img: short-bursts.png
   alt: A teaser graphic for the Short Bursts paper.
+
+coi_analysis:
+  img: cois.png
+  alt: A teaser graphic for the COI Analysis paper.
+
+census_topdown_hdsr:
+  img: dp-noise.png
