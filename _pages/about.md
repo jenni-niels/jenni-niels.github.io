@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-As of Fall 2022, I am a PhD student in Computer Science at the University of Chicago, advised by [Aloni Cohen](https://aloni.net).
+I am a PhD student in Computer Science at the University of Chicago, advised by [Aloni Cohen](https://aloni.net).
 
 My research interests are at the intersection of theoretical computer science, social justice, law and public policy.  Recently I've been thinking about graphs and networks, optimization methods, and differential privacy in the context of the Census, Voting Rights, and Redistricting.  I'm also pasionate about mathematics and civic education/outreach.
 
