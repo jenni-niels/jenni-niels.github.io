@@ -16,7 +16,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a PhD student in Computer Science at the University of Chicago, advised by [Aloni Cohen](https://aloni.net).
 
-My research interests are at the intersection of theoretical computer science, social justice, law and public policy.  Recently I've been thinking about graphs and networks, optimization methods, and differential privacy in the context of the Census, Voting Rights, and Redistricting.  I'm also pasionate about mathematics and civic education/outreach.
+My research interests are at the intersection of theoretical computer science, social justice, law and public policy.  Recently I've been thinking about graphs and networks, optimization methods, and differential privacy in the context of the Census, Voting Rights, and Redistricting.  I'm also passionate about education/outreach in mathematics and civics.
 
 Prior to my graduate studies, I worked as a computational engineer at the [MGGG Redistricting Lab](https://www.mggg.org), where I worked on a mixture of academic research projects, software development, and analysis for VRA cases.  I graduated from Tufts University in 2019, where I studied computer science and math.
 

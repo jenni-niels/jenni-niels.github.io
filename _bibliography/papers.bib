@@ -1,6 +1,18 @@
 ---
 ---
 
+@inproceedings{coi_analysis,
+  title={Aggregating Community Maps},
+  author={Chambers,Erin and Duchin, Moon and Edmonds, Ranthony A.C. and Edwards, Parker and Matthews,JN and Pizzimenti,Anthony E. and Richardson, Chanel and Rule, Parker and Stern, Ari},
+  booktitle={The 30th International Conference on Advances in Geographic Information Systems (SIGSPATIAL ’22)},
+  year={2022},
+  month={nov},
+  abstract={This paper is motivated by a practical problem: many U.S. states have public hearings on "communities of interest" as part of their redistricting process, but no state has as yet adopted a concrete method of spatializing and aggregating community maps in order to take them into account in the drawing of new  boundaries for electoral districts.  Below, we describe a year-long project that collected and synthesized thousands of community maps through partnerships with grassroots organizations and/or government offices.  The submissions were then aggregated by geographical clustering with a modified Hausdorff distance; then, the text from the narrative submissions was classified with semantic labels so that short runs of a Markov chain could be used to form semantic sub-clusters.  The resulting dataset is publicly available, including the raw data of submitted community maps as well as post-processed community clusters and a scoring system for measuring how well districting plans respect the clusters.  We provide a discussion of the strengths and weaknesses of this methodology and conclude with proposed directions for future work.},
+  abbr={coi_analysis},
+  selected={true},
+  pdf={AggregatingCommunityMaps.pdf}
+}
+
 @article{census_topdown_hdsr,
   title={Private Numbers in Public Policy: Census, Differential Privacy, and Redistricting},
   author={Cohen, Aloni and Duchin, Moon and Matthews, JN and Suwal, Bhushan},
@@ -14,17 +26,8 @@
   html={https://hdsr.mitpress.mit.edu/pub/954ycugm},
   abstract={The 2020 Decennial Census in the United States was released with a new disclosure avoidance system in place, putting <i>differential privacy</i> in the spotlight for a wide range of data users. We consider several key applications of census data in redistricting, developing tools and demonstrations for practitioners who are concerned about the impacts of this new noising algorithm called TopDown. Based on a close look at nine localities in Texas and Arizona, we find reassuring evidence that TopDown did not threaten the ability to balance districts, to describe their demographic composition accurately, or to detect signals of racial polarization.},
   abbr={census_topdown_hdsr},
-  selected={true}
-}
-
-@article{coi_analysis,
-  title={Aggregating Community Maps},
-  author={Chambers,Erin and Duchin, Moon and Edmonds, Ranthony A.C. and Edwards, Parker and Matthews,JN and Pizzimenti,Anthony E. and Richardson, Chanel and Rule, Parker and Stern, Ari},
-  journal={Submitted},
-  year={2022},
-  abstract={This paper is motivated by a practical problem:  many U.S. states have public hearings on "communities of interest" as part of their redistricting process, but no state has as yet adopted a concrete method of spatializing and aggregating community maps in order to take them into account in the drawing of new  boundaries for electoral districts.  Below, we describe a year-long project that collected and synthesized thousands of community maps through partnerships with grassroots organizations and/or government offices.  The submissions were then aggregated by geographical clustering with a modified Hausdorff distance; then, the text from the narrative submissions was classified with semantic labels so that short runs of a Markov chain could be used to form semantic sub-clusters.  The resulting dataset is publicly available, including the raw data of submitted community maps as well as post-processed community clusters and a scoring system for measuring how well districting plans respect the clusters.  We provide a discussion of the strengths and weaknesses of this methodology and conclude with proposed directions for future work.},
-  abbr={coi_analysis},
-  selected={true}
+  selected={true},
+  pdf={PrivateNumbersInPublicPolicy.pdf}
 }
 
 @inproceedings{census_topdown,
@@ -35,7 +38,7 @@
   month={may},
   organization={Schloss Dagstuhl-Leibniz-Zentrum f{\"u}r Informatik},
   code={https://github.com/mggg/census-diff-privacy},
-  pdf={https://drops.dagstuhl.de/opus/volltexte/2021/13873/pdf/LIPIcs-FORC-2021-5.pdf},
+  pdf={CensusTopDown.pdf},
   abstract={The 2020 Decennial Census will be released with a new disclosure avoidance system in place, putting differential privacy in the spotlight for a wide range of data users. We consider several key applications of Census data in redistricting, developing tools and demonstrations for practitioners who are concerned about the impacts of this new noising algorithm called TopDown. Based on a close look at reconstructed Texas data, we find reassuring evidence that TopDown will not threaten the ability to produce districts with tolerable population balance or to detect signals of racial polarization for Voting Rights Act enforcement.},
   abbr={census_topdown},
   selected={true}
