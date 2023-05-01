@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description: "note: authors are listed in alphabetical order"
-years: [2022, 2021, 2020]
+years: [2023, 2022, 2021]
 nav: true
 ---
 <!-- _pages/publications.md -->
